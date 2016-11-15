@@ -1,0 +1,20 @@
+{
+  "name": "AngularMaterialDemo",
+  "authors": [
+    "Nikola <nikola.ravic@gmail.com>"
+  ],
+  "description": "Angular Material Fundamentals Course Demo App",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.1"
+  }
+}
