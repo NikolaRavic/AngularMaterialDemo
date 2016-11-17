@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>Angular Material Demo</title>
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
     <link rel="stylesheet" href="assets/app.css">
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+    <script src="dist/services/userService.js"></script>
+    <script src="dist/controllers/mainController.js"></script>
     <script src="dist/boot.js"></script>
     <style type="text/css">
         [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -16,7 +20,17 @@
         }
     </style>
 </head>
-<body ng-cloak ng-controller="mainController">
-<h1>{{2+2}}</h1>
+<body layout="row" ng-cloak ng-controller="mainController as vm">
+
+    <div ng-include="'dist/view/sidenav.html'" layout="vertical"></div>
+
+    <div layout="column" flex>
+        <div ng-include="'dist/view/toolbar-header.html'"></div>
+
+        <md-content flex id="content">
+            Main content
+        </md-content>
+    </div>
+
 </body>
 </html>
