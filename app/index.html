@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Angular Material Demo</title>
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
-    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
-    <link rel="stylesheet" href="assets/app.css">
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
@@ -14,6 +11,11 @@
     <script src="dist/services/userService.js"></script>
     <script src="dist/controllers/mainController.js"></script>
     <script src="dist/boot.js"></script>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css">
+    <link rel="stylesheet" href="assets/app.css">
+
     <style type="text/css">
         [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
             display: none !important;
@@ -28,7 +30,17 @@
         <div ng-include="'dist/view/toolbar-header.html'"></div>
 
         <md-content flex id="content">
-            Main content
+            <div ng-include="'dist/view/main-content.html'"></div>
+            <md-tabs md-selected="vm.tabIndex" md-dynamic-height md-stretch-tabs="always">
+
+                <md-tab label="Bio">
+                    <div ng-include="'dist/view/tab-bio.html'"></div>
+                </md-tab>
+                <md-tab label="Notes">
+                    <div ng-include="'dist/view/tab-notes.html'"></div>
+                </md-tab>
+
+            </md-tabs>
         </md-content>
     </div>
 
