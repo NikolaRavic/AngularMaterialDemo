@@ -18,6 +18,7 @@ var ContactManagerApp;
             this.foundIndex = null;
             this.users = [];
             this.newNote = new ContactManagerApp.Note('', null);
+            this.deletedNote = null;
             var self = this;
             this.userService
                 .loadAllUsers()
@@ -43,21 +44,30 @@ var ContactManagerApp;
         MainController.prototype.addNote = function () {
             this.selected.notes.push(this.newNote);
             this.newNote = new ContactManagerApp.Note('', null);
-            this.openToast('Note added');
+            this.openToast('Note added', false);
             this.noteForm.$setPristine();
             this.noteForm.$setUntouched();
         };
         MainController.prototype.removeNote = function (note) {
+            this.deletedNote = note;
             this.foundIndex = this.selected.notes.indexOf(note);
             this.selected.notes.splice(this.foundIndex, 1);
-            this.openToast("Note successfully removed!");
+            this.openToast("Note successfully removed!", true);
         };
-        MainController.prototype.openToast = function (message) {
+        MainController.prototype.openToast = function (message, action) {
+            var _this = this;
             var toast = this.$mdToast.simple()
                 .textContent(message)
                 .position('top right')
                 .hideDelay(3000);
-            this.$mdToast.show(toast);
+            if (action) {
+                toast.action('undo');
+            }
+            this.$mdToast.show(toast).then(function (response) {
+                if (response == 'ok') {
+                    _this.selected.notes.push(_this.deletedNote);
+                }
+            });
         };
         MainController.prototype.showContactOptions = function ($event) {
             this.$mdBottomSheet.show({
@@ -86,7 +96,7 @@ var ContactManagerApp;
                 var newUser = ContactManagerApp.User.fromCreate(user);
                 self.users.push(newUser);
                 self.selectUser(newUser);
-                self.openToast('User added');
+                self.openToast('User added', false);
             }, function () {
                 console.log('You cancelled the dialog.');
             });
@@ -101,7 +111,7 @@ var ContactManagerApp;
             var self = this;
             this.$mdDialog.show(confirm).then(function () {
                 self.selected.notes = [];
-                self.openToast('Cleared notes');
+                self.openToast('Cleared notes', false);
             });
         };
         MainController.$inject = [

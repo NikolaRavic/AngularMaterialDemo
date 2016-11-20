@@ -37,6 +37,7 @@ module ContactManagerApp {
         foundIndex: number = null;
         users: User[] = [];
         newNote: Note = new Note('',null);
+        deletedNote: Note = null;
 
         toggleSideNav(): void {
             this.$mdSidenav('left').toggle();
@@ -57,7 +58,7 @@ module ContactManagerApp {
         addNote() {
             this.selected.notes.push(this.newNote);
             this.newNote = new Note('',null);
-            this.openToast('Note added');
+            this.openToast('Note added', false);
 
             this.noteForm.$setPristine();
             this.noteForm.$setUntouched();
@@ -65,18 +66,25 @@ module ContactManagerApp {
         }
 
         removeNote(note: Note): void {
+            this.deletedNote = note;
             this.foundIndex = this.selected.notes.indexOf(note);
             this.selected.notes.splice(this.foundIndex, 1);
-            this.openToast("Note successfully removed!");
+            this.openToast("Note successfully removed!", true);
         }
 
-        openToast(message: string):void {
+        openToast(message: string, action: boolean):void {
             var toast = this.$mdToast.simple()
                     .textContent(message)
                     .position('top right')
                     .hideDelay(3000);
-
-            this.$mdToast.show(toast);
+            if (action){
+                toast.action('undo');
+            }
+            this.$mdToast.show(toast).then((response)=>{
+                if(response=='ok'){
+                    this.selected.notes.push(this.deletedNote);
+                }
+            });
         }
 
         showContactOptions($event){
@@ -108,7 +116,7 @@ module ContactManagerApp {
                 var newUser:User = User.fromCreate(user);
                 self.users.push(newUser);
                 self.selectUser(newUser);
-                self.openToast('User added');
+                self.openToast('User added', false);
             },()=> {
                 console.log('You cancelled the dialog.');
             });
@@ -124,7 +132,7 @@ module ContactManagerApp {
             var self = this;
             this.$mdDialog.show(confirm).then(() => {
                 self.selected.notes = [];
-                self.openToast('Cleared notes');
+                self.openToast('Cleared notes', false);
             });
         }
     }

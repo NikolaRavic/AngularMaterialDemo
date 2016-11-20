@@ -13,8 +13,15 @@ var ContactManagerApp;
             .icon('twitter', './assets/svg/twitter.svg', 128)
             .icon('phone', './assets/svg/phone.svg', 128);
         $mdThemingProvider.theme('default')
-            .primaryPalette('blue')
-            .accentPalette('red');
+            .primaryPalette('blue', {
+            'default': '400',
+            'hue-1': '100',
+            'hue-2': '600',
+            'hue-3': 'A100',
+        })
+            .accentPalette('red', {
+            'default': '400'
+        });
     });
 })(ContactManagerApp || (ContactManagerApp = {}));
 //# sourceMappingURL=boot.js.map
