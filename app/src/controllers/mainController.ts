@@ -38,6 +38,7 @@ module ContactManagerApp {
         users: User[] = [];
         newNote: Note = new Note('',null);
         deletedNote: Note = null;
+        noteForm: any
 
         toggleSideNav(): void {
             this.$mdSidenav('left').toggle();

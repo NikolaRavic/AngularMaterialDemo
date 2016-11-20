@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d6aeef9f-e350-4e90-a577-99ef2ef86f02" name="ngmaterialdemo.ravic.rs" url="http://www.ngmaterialdemo.ravic.rs">
+        <fileTransfer host="ftpcluster.loopia.se" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
