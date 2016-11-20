@@ -1,38 +1,119 @@
 /**
  * Created by Nikola on 11/15/2016.
  */
+/// <reference path="../_all.ts" />
 module ContactManagerApp {
     export class MainController {
-        static $inject = ['userService','$mdSidenav'];
+        static $inject = [
+            'userService',
+            '$mdSidenav',
+            '$mdToast',
+            '$mdDialog',
+            '$mdMedia',
+            '$mdBottomSheet'];
 
-        constructor(private userService : IUserService,
-        private $mdSidenav: angular.material.ISidenavService) {
-            let self = this;
+        constructor(private userService: IUserService,
+                    private $mdSidenav: angular.material.ISidenavService,
+                    private $mdToast: angular.material.IToastService,
+                    private $mdDialog: angular.material.IDialogService,
+                    private $mdMedia: angular.material.IMedia,
+                    private $mdBottomSheet: angular.material.IBottomSheetService) {
+            var self = this;
 
             this.userService
                 .loadAllUsers()
                 .then((users: User[]) => {
-                self.users = users;
-                self.selected = users[0];
-                console.log(self.users);
-            });
+                    self.users = users;
+                    self.selected = users[0];
+                    self.userService.selectedUser = self.selected;
+
+                    console.log(self.users);
+                });
         }
+
         tabIndex: number = 0;
         searchText: string = '';
-        users: User[] = [];
         selected: User = null;
-        message: string = "Hello from our controller";
+        foundIndex: number = null;
+        users: User[] = [];
 
-        toggleSideNav() : void {
+        toggleSideNav(): void {
             this.$mdSidenav('left').toggle();
         }
-        selectUser (user : User) : void {
+
+        selectUser(user: User): void {
             this.selected = user;
+            this.userService.selectedUser = user;
 
             var sidenav = this.$mdSidenav('left');
-            if(sidenav.isOpen()){
+            if (sidenav.isOpen()) {
                 sidenav.close();
             }
+            this.tabIndex = 0;
+        }
+
+        removeNote(note: Note): void {
+            this.foundIndex = this.selected.notes.indexOf(note);
+            this.selected.notes.splice(this.foundIndex, 1);
+            this.openToast("Note successfully removed!");
+        }
+
+        openToast(message: string):void {
+            var toast = this.$mdToast.simple()
+                    .textContent(message)
+                    .position('top right')
+                    .hideDelay(3000);
+
+            this.$mdToast.show(toast);
+        }
+
+        showContactOptions($event){
+            this.$mdBottomSheet.show({
+                parent: angular.element(document.getElementById('wrapper')),
+                templateUrl: './dist/view/contactSheet.html',
+                controller: ContactPanelController,
+                controllerAs: 'cp',
+                bindToController: true,
+                targetEvent: $event
+            }).then((clickedItem)=>{
+                clickedItem && console.log(clickedItem.name + ' clicked!');
+            });
+        }
+
+        addUser($event){
+            var self = this;
+            var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs'));
+
+            this.$mdDialog.show({
+                templateUrl:'./dist/view/newUserDialog.html',
+                parent: angular.element(document.body),
+                targetEvent: $event,
+                controller: AddUserDialogController,
+                controllerAs: 'ctrl',
+                clickOutsideToClose: true,
+                fullscreen: useFullScreen
+            }).then((user: CreateUser) =>{
+                var newUser:User = User.fromCreate(user);
+                self.users.push(newUser);
+                self.selectUser(newUser);
+                self.openToast('User added');
+            },()=> {
+                console.log('You cancelled the dialog.');
+            });
+        }
+
+        clearNotes($event){
+            var confirm = this.$mdDialog.confirm()
+                .title('Are you sure you want to delete all notes?')
+                .textContent('All notes will be deleted, you cant\'t undo this action.')
+                .targetEvent($event)
+                .ok('Yes')
+                .cancel('No');
+            var self = this;
+            this.$mdDialog.show(confirm).then(() => {
+                self.selected.notes = [];
+                self.openToast('Cleared notes');
+            });
         }
     }
 }

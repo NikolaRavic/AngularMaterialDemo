@@ -10,6 +10,8 @@
     <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
     <script src="dist/services/userService.js"></script>
     <script src="dist/controllers/mainController.js"></script>
+    <script src="dist/controllers/addUserDialogController.js"></script>
+    <script src="dist/controllers/contactPanelController.js"></script>
     <script src="dist/boot.js"></script>
 
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
@@ -26,7 +28,7 @@
 
     <div ng-include="'dist/view/sidenav.html'" layout="vertical"></div>
 
-    <div layout="column" flex>
+    <div layout="column" flex id="wrapper">
         <div ng-include="'dist/view/toolbar-header.html'"></div>
 
         <md-content flex id="content">

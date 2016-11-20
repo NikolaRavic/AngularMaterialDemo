@@ -17,7 +17,7 @@
             <md-not-found>No user matching "{{vm.searchText}}" were found.</md-not-found>
         </md-autocomplete>
     </div>
-    <md-content>
+    <md-content class="scrollable-nav-content">
         <md-list>
             <md-list-item ng-repeat="user in vm.users | filter: vm.searchText | orderBy: 'name'">
                 <md-button ng-click="vm.selectUser(user)"
@@ -28,4 +28,7 @@
             </md-list-item>
         </md-list>
     </md-content>
+    <md-button aria-label="add" class="md-fab md-fab-bottom-right" ng-click="vm.addUser($event)">
+        <ng-md-icon icon="add"></ng-md-icon>
+    </md-button>
 </md-sidenav>

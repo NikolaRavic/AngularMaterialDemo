@@ -15,7 +15,7 @@ module ContactManagerApp {
             public name: string,
             public avatar: string,
             public bio: string,
-            public notes: Note[])  {
+            public notes: Note[]) {
         }
 
         static fromCreate(user: CreateUser): User {

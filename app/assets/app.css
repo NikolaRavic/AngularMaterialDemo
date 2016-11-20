@@ -48,3 +48,17 @@ md-sidenav md-list{
     -moz-transform: scale(0.70);
     transform: translateZ(0);
 }
+.scrollable-nav-content{
+    position: absolute;
+    top: 136px;
+    bottom: 0px;
+    left: 0px;
+    width:100%;
+    overflow: auto;
+}
+
+span.name{
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
