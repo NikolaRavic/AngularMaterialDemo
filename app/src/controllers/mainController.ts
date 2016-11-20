@@ -36,6 +36,7 @@ module ContactManagerApp {
         selected: User = null;
         foundIndex: number = null;
         users: User[] = [];
+        newNote: Note = new Note('',null);
 
         toggleSideNav(): void {
             this.$mdSidenav('left').toggle();
@@ -50,6 +51,17 @@ module ContactManagerApp {
                 sidenav.close();
             }
             this.tabIndex = 0;
+        }
+
+
+        addNote() {
+            this.selected.notes.push(this.newNote);
+            this.newNote = new Note('',null);
+            this.openToast('Note added');
+
+            this.noteForm.$setPristine();
+            this.noteForm.$setUntouched();
+
         }
 
         removeNote(note: Note): void {
@@ -72,9 +84,9 @@ module ContactManagerApp {
                 parent: angular.element(document.getElementById('wrapper')),
                 templateUrl: './dist/view/contactSheet.html',
                 controller: ContactPanelController,
+                targetEvent: $event,
                 controllerAs: 'cp',
-                bindToController: true,
-                targetEvent: $event
+                bindToController: true
             }).then((clickedItem)=>{
                 clickedItem && console.log(clickedItem.name + ' clicked!');
             });

@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25f216dd-7b02-4ecc-959d-640da89484f3" name="Default" comment="Added list of contants, auto complete, tabs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/dist/controllers/addUserDialogController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/dist/controllers/contactPanelController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/dist/view/contactSheet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/dist/view/newUserDialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/controllers/addUserDialogController.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/controllers/contactPanelController.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="25f216dd-7b02-4ecc-959d-640da89484f3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/dist/view/tab-notes-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/app.css" afterPath="$PROJECT_DIR$/app/assets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/svg/google_plus.svg" afterPath="$PROJECT_DIR$/app/assets/svg/google_plus.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/svg/hangouts.svg" afterPath="$PROJECT_DIR$/app/assets/svg/hangouts.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/svg/phone.svg" afterPath="$PROJECT_DIR$/app/assets/svg/phone.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/svg/twitter.svg" afterPath="$PROJECT_DIR$/app/assets/svg/twitter.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/boot.js" afterPath="$PROJECT_DIR$/app/dist/boot.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/boot.js.map" afterPath="$PROJECT_DIR$/app/dist/boot.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/controllers/mainController.js" afterPath="$PROJECT_DIR$/app/dist/controllers/mainController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/controllers/mainController.js.map" afterPath="$PROJECT_DIR$/app/dist/controllers/mainController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/view/sidenav.html" afterPath="$PROJECT_DIR$/app/dist/view/sidenav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/view/newUserDialog.html" afterPath="$PROJECT_DIR$/app/dist/view/newUserDialog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/view/tab-notes.html" afterPath="$PROJECT_DIR$/app/dist/view/tab-notes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dist/view/toolbar-header.html" afterPath="$PROJECT_DIR$/app/dist/view/toolbar-header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/boot.ts" afterPath="$PROJECT_DIR$/app/src/boot.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/controllers/mainController.ts" afterPath="$PROJECT_DIR$/app/src/controllers/mainController.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/models.ts" afterPath="$PROJECT_DIR$/app/src/models.ts" />
     </list>
     <ignored path="AngularMaterialDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +35,38 @@
     <favorites_list name="AngularMaterialDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tab-notes-form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dist/view/tab-notes-form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainController.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/controllers/mainController.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidenav.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/dist/view/sidenav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,25 +101,26 @@
         <option value="$PROJECT_DIR$/app/dist/view/main-content.html" />
         <option value="$PROJECT_DIR$/app/dist/view/tab-bio.html" />
         <option value="$PROJECT_DIR$/app/dist/controllers/mainController.js" />
-        <option value="$PROJECT_DIR$/app/dist/view/tab-notes.html" />
         <option value="$PROJECT_DIR$/app/dist/view/sidenav.html" />
         <option value="$PROJECT_DIR$/app/dist/controllers/addUserDialogController.js" />
         <option value="$PROJECT_DIR$/app/src/models.ts" />
         <option value="$PROJECT_DIR$/app/dist/models.js" />
         <option value="$PROJECT_DIR$/app/dist/controllers/contactPanelController.ts" />
         <option value="$PROJECT_DIR$/app/dist/view/toolbar-header.html" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/assets/app.css" />
         <option value="$PROJECT_DIR$/app/dist/view/contactSheet.html" />
         <option value="$PROJECT_DIR$/app/assets/svg/hangouts.svg" />
         <option value="$PROJECT_DIR$/app/assets/svg/phone.svg" />
         <option value="$PROJECT_DIR$/app/assets/svg/twitter.svg" />
         <option value="$PROJECT_DIR$/app/assets/svg/google_plus.svg" />
-        <option value="$PROJECT_DIR$/app/src/boot.ts" />
         <option value="$PROJECT_DIR$/app/src/controllers/contactPanelController.ts" />
-        <option value="$PROJECT_DIR$/app/dist/view/newUserDialog.html" />
-        <option value="$PROJECT_DIR$/app/src/controllers/mainController.ts" />
         <option value="$PROJECT_DIR$/app/src/controllers/addUserDialogController.ts" />
+        <option value="$PROJECT_DIR$/app/dist/view/tab-notes.html" />
+        <option value="$PROJECT_DIR$/app/assets/app.css" />
+        <option value="$PROJECT_DIR$/app/src/boot.ts" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/dist/view/newUserDialog.html" />
+        <option value="$PROJECT_DIR$/app/dist/view/tab-notes-form.html" />
+        <option value="$PROJECT_DIR$/app/src/controllers/mainController.ts" />
       </list>
     </option>
   </component>
@@ -111,7 +132,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1031" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -130,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,7 +351,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-messages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,17 +373,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="svg" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,7 +479,8 @@
       <workItem from="1479166659259" duration="2841000" />
       <workItem from="1479412770919" duration="7617000" />
       <workItem from="1479558718313" duration="4889000" />
-      <workItem from="1479577147568" duration="13538000" />
+      <workItem from="1479577147568" duration="20249000" />
+      <workItem from="1479641945868" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="Added mainController.ts">
       <created>1479168939908</created>
@@ -481,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479423938830</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added forms, action buttons...">
+      <created>1479602674002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1479602674002</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30869000" />
+    <option name="totallyTimeSpent" value="37581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,27 +526,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1031" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150986" sideWeight="0.47844827" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26082578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2767094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.48898217" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5036726" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.49568966" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.4963274" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +573,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added mainController.ts" />
     <MESSAGE value="Added list of contants, auto complete, tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added list of contants, auto complete, tabs" />
+    <MESSAGE value="Added forms, action buttons..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added forms, action buttons..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -642,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-296">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,19 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dist/boot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/angular-material/angular-material.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="256" column="8" lean-forward="false" selection-start-line="256" selection-start-column="8" selection-end-line="256" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="807" column="7" lean-forward="true" selection-start-line="807" selection-start-column="7" selection-end-line="807" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2514" lean-forward="false" selection-start-line="0" selection-start-column="2514" selection-end-line="0" selection-end-column="2514" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1352" lean-forward="false" selection-start-line="0" selection-start-column="1352" selection-end-line="0" selection-end-column="1352" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,15 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2102" lean-forward="false" selection-start-line="0" selection-start-column="2102" selection-end-line="0" selection-end-column="2102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,15 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1869" lean-forward="true" selection-start-line="0" selection-start-column="1869" selection-end-line="0" selection-end-column="1869" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/boot.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,19 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dist/view/tab-notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/dist/view/tab-bio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,30 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dist/view/sidenav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="48" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dist/view/newUserDialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/controllers/mainController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -932,10 +894,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-material/modules/scss/angular-material.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="2982" column="32" lean-forward="true" selection-start-line="2982" selection-start-column="32" selection-end-line="2982" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/boot.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/boot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="73" lean-forward="true" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/view/tab-notes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/view/newUserDialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/view/tab-notes-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/controllers/mainController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/view/sidenav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>

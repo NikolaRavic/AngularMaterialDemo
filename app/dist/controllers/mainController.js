@@ -17,6 +17,7 @@ var ContactManagerApp;
             this.selected = null;
             this.foundIndex = null;
             this.users = [];
+            this.newNote = new ContactManagerApp.Note('', null);
             var self = this;
             this.userService
                 .loadAllUsers()
@@ -39,6 +40,13 @@ var ContactManagerApp;
             }
             this.tabIndex = 0;
         };
+        MainController.prototype.addNote = function () {
+            this.selected.notes.push(this.newNote);
+            this.newNote = new ContactManagerApp.Note('', null);
+            this.openToast('Note added');
+            this.noteForm.$setPristine();
+            this.noteForm.$setUntouched();
+        };
         MainController.prototype.removeNote = function (note) {
             this.foundIndex = this.selected.notes.indexOf(note);
             this.selected.notes.splice(this.foundIndex, 1);
@@ -56,9 +64,9 @@ var ContactManagerApp;
                 parent: angular.element(document.getElementById('wrapper')),
                 templateUrl: './dist/view/contactSheet.html',
                 controller: ContactManagerApp.ContactPanelController,
+                targetEvent: $event,
                 controllerAs: 'cp',
-                bindToController: true,
-                targetEvent: $event
+                bindToController: true
             }).then(function (clickedItem) {
                 clickedItem && console.log(clickedItem.name + ' clicked!');
             });
