@@ -83,7 +83,7 @@ var ContactManagerApp;
         };
         MainController.prototype.addUser = function ($event) {
             var self = this;
-            var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs'));
+            var useFullScreen = (this.$mdMedia('md') || this.$mdMedia('sm') || this.$mdMedia('xs') || this.$mdMedia('lg'));
             this.$mdDialog.show({
                 templateUrl: './dist/view/newUserDialog.html',
                 parent: angular.element(document.body),
